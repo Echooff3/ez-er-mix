@@ -462,7 +462,7 @@ impl EzErMix {
 }
 
 impl ClapPlugin for EzErMix {
-    const CLAP_ID: &'static str = "com.ez-er-mix.ez-er-mix";
+    const CLAP_ID: &'static str = "com.trilsoft.ez-er-mix";
     const CLAP_DESCRIPTION: Option<&'static str> = Some("Plays installed EZmix preset packs with a simplified interface");
     const CLAP_MANUAL_URL: Option<&'static str> = None;
     const CLAP_SUPPORT_URL: Option<&'static str> = None;

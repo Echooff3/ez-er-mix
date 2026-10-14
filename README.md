@@ -39,6 +39,38 @@ cargo run --release -p ezmix-dsp --example render_all     # render + sanity-chec
 cargo test -p ez-er-mix                                    # rack audio + headless UI tests
 ```
 
+## Release
+
+`./scripts/release.sh` builds a universal (arm64 + x86_64) installer,
+`out/EZ-er-Mix-<version>-macOS.pkg`, that installs the VST3 and CLAP plug-ins
+into `/Library/Audio/Plug-Ins/{VST3,CLAP}` and the app into `/Applications`
+(each can be deselected under Customize). It refuses to build from uncommitted
+changes unless `ALLOW_DIRTY=1`.
+
+One-time setup:
+
+* `rustup target add x86_64-apple-darwin` (universal builds use rustup's
+  toolchain even if a Homebrew Rust comes first on `PATH`).
+* For a signed, notarized package (Apple Developer Program): create
+  *Developer ID Application* and *Developer ID Installer* certificates
+  (Xcode → Settings → Accounts → Manage Certificates), then store notary
+  credentials with an app-specific password:
+  `xcrun notarytool store-credentials ez-er-mix-notary --apple-id <id> --team-id <team>`.
+
+```sh
+export DEVELOPER_ID_APP="Developer ID Application: <name> (<team>)"
+export DEVELOPER_ID_INSTALLER="Developer ID Installer: <name> (<team>)"
+./scripts/release.sh   # signs, notarizes and staples; NOTARY_PROFILE overrides the profile name
+```
+
+Without the two `DEVELOPER_ID_*` variables the package is built unsigned, and
+Gatekeeper makes users approve it in System Settings → Privacy & Security.
+Remove copies left in `~/Library/Audio/Plug-Ins` by `install.sh` before
+installing the package, or DAWs list the plug-in twice.
+
+To uninstall, delete the three installed bundles, then:
+`sudo pkgutil --forget com.trilsoft.ez-er-mix.pkg.vst3` (and `.clap`, `.app`).
+
 ## Layout
 
 | Crate | Role |
