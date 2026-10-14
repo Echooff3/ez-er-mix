@@ -5,6 +5,14 @@ turn a few macro knobs. It loads the EZmix preset packs already installed on
 this Mac (no copies, no conversion) and renders them with its own DSP engine.
 It ships as a **VST3** and **CLAP** plugin plus a **standalone app**.
 
+Like EZmix 3's rack, presets can be stacked: each tab above the knobs is one
+effect in a serial chain (left to right). "+" adds a tab, the dot on a tab
+turns that effect on or off, × removes it, and tabs can be dragged (or moved
+from the right-click menu) to reorder the chain. The browser and the ◀ ▶
+buttons load into the selected tab. Up to 8 slots; each has its own host
+parameters ("Slot N On", "Slot N Macro 1–8") that stay with the effect when it
+is moved. Switching presets and reordering crossfade instead of clicking.
+
 Deliberately left out: the AI features (Mix Assistant / preset space, and the
 TFLite "AI console" stages used by 88 presets — those stages are bypassed and
 the UI says so). Neural Amp Modeler captures (174 presets) are supported.
@@ -19,7 +27,8 @@ the UI says so). Neural Amp Modeler captures (174 presets) are supported.
 Standalone: `EZ-er Mix.app` uses the default output device at its native rate
 and the default input device (except built-in microphones, to avoid feedback).
 From a terminal: `target/release/ez-er-mix --input-device "<name>"`.
-`EZERMIX_PRESET="EMX3_Core3:/Presets/68 Plexi Crunch"` preselects a preset.
+The standalone reopens the last rack. `EZERMIX_PRESET="EMX3_Core3:/Presets/68 Plexi Crunch"`
+preselects a preset; separate several with `;` to start with a rack.
 
 Tools:
 
@@ -27,6 +36,7 @@ Tools:
 cargo run --release -p ezmix-content --example scan        # parse every preset
 cargo run --release -p ezmix-content --example inspect -- "Plexi Crunch"
 cargo run --release -p ezmix-dsp --example render_all     # render + sanity-check all presets
+cargo test -p ez-er-mix                                    # rack audio + headless UI tests
 ```
 
 ## Layout
@@ -35,7 +45,7 @@ cargo run --release -p ezmix-dsp --example render_all     # render + sanity-chec
 |---|---|
 | `crates/ezmix-content` | Pack discovery, `ttfs` container reader, preset parsers (all three generations), parameter range table |
 | `crates/ezmix-dsp` | Effect engine: ~95 effect types, routing graph, NAM WaveNet runtime, partitioned convolution, IR decoder |
-| `crates/ezmix-plugin` | nih-plug plugin + egui editor + standalone entry point |
+| `crates/ezmix-plugin` | nih-plug plugin (preset rack) + egui editor + standalone entry point |
 
 ## What was reverse engineered
 
