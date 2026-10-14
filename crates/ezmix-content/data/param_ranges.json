@@ -1,0 +1,8578 @@
+{
+"TA_1176": {
+"attack": {
+"default": 4.0,
+"hi": 7.0,
+"kind": "lin",
+"lo": 0.0
+},
+"input": {
+"default": -18.0,
+"hi": 0.0,
+"kind": "lin",
+"lo": -48.0
+},
+"midside": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"mix": {
+"default": 100.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"output": {
+"default": 0.0,
+"hi": 12.0,
+"kind": "lin",
+"lo": -36.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ratio": {
+"default": 0.0,
+"hi": 4,
+"kind": "step",
+"lo": 0
+},
+"release": {
+"default": 4.0,
+"hi": 7.0,
+"kind": "lin",
+"lo": 0.0
+},
+"side-attack": {
+"default": 4.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"side-input": {
+"default": -18.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"side-output": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"side-ratio": {
+"default": 0.0,
+"hi": 4,
+"kind": "step",
+"lo": 0
+},
+"side-release": {
+"default": 4.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+}
+},
+"TA_ADASTD1": {
+"del_fix": {
+"default": 3.0,
+"hi": 5.0,
+"kind": "lin",
+"lo": 1.3032
+},
+"del_mix": {
+"default": 20.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"del_mod": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"del_sweep": {
+"default": 2.0,
+"hi": 20000,
+"kind": "log",
+"lo": 0.0842911
+},
+"level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"mixa": {
+"default": 50.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"mixb": {
+"default": 50.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"reg1": {
+"default": 0.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"reg2": {
+"default": 1.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"reg3": {
+"default": 0.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"reg4": {
+"default": 1.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"reg5": {
+"default": 0.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"reg6": {
+"default": 1.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"reg_col": {
+"default": 3000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"reg_on": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"reg_tap": {
+"default": 2.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"regen": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+}
+},
+"TA_ALPHAOMEGA": {
+"bass": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"bite": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"blend": {
+"default": 8.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"drive": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"gaincomp": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"growl": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"level": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"mid": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"mod": {
+"default": 0.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"treble": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+}
+},
+"TA_AMPEG_B15N": {
+"ch1bass": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"ch1bright": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ch1treble": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"ch1ultrahi": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ch1ultralo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ch1volume": {
+"default": 3.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"ch2bass": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"ch2bright": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ch2treble": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"ch2ultrahi": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ch2ultralo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ch2volume": {
+"default": 3.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"mode": {
+"default": 0.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_AMSRMX16ECHO": {
+"delay_l": {
+"default": 0.5,
+"hi": 1.2,
+"kind": "log",
+"lo": 0.01
+},
+"delay_r": {
+"default": 0.5,
+"hi": 1.2,
+"kind": "log",
+"lo": 0.01
+},
+"dell-bpm": {
+"default": 8.0,
+"hi": 15,
+"kind": "step",
+"lo": 0
+},
+"dell-synced": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"delr-bpm": {
+"default": 8.0,
+"hi": 15,
+"kind": "step",
+"lo": 0
+},
+"delr-synced": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"dry": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -1000.0
+},
+"high": {
+"default": 0.0,
+"hi": 10,
+"kind": "lin",
+"lo": -7.70084
+},
+"level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"low": {
+"default": 0.0,
+"hi": 10,
+"kind": "lin",
+"lo": -9.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"regen_l": {
+"default": 3.0,
+"hi": 9.0,
+"kind": "lin",
+"lo": 0.0
+},
+"regen_r": {
+"default": 3.0,
+"hi": 9.0,
+"kind": "lin",
+"lo": 0.0
+},
+"reverse": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"wet": {
+"default": -12.0,
+"hi": 0.0,
+"kind": "lin",
+"lo": -40.0
+}
+},
+"TA_AMSRMX16NONLIN": {
+"decay": {
+"default": 5.0,
+"hi": 9.0,
+"kind": "lin",
+"lo": 0.0
+},
+"dry": {
+"default": -40.0,
+"hi": 24,
+"kind": "lin",
+"lo": -1000.0
+},
+"high": {
+"default": 0.0,
+"hi": 10,
+"kind": "lin",
+"lo": -4.73684
+},
+"level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"predelay": {
+"default": 0.0,
+"hi": 0.1,
+"kind": "lin",
+"lo": 0.0
+},
+"wet": {
+"default": -12.0,
+"hi": 0.0,
+"kind": "lin",
+"lo": -40.0
+}
+},
+"TA_AUTOWAH": {
+"depth": {
+"default": 0.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"filter": {
+"default": 0.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"mode": {
+"default": 1.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"polar": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"release": {
+"default": 1.0,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"sensitivity": {
+"default": 0.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"speed": {
+"hi": 20000,
+"kind": "log",
+"lo": 0,
+"sync_steps": 19
+}
+},
+"TA_BASS1x15": {
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"tweeter": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"x_pos": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"z_pos": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_BASS8X10": {
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"tweeter": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"x_pos": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"z_pos": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_BASSAMP1": {
+"bass": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"color": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"compression": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"drive": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"master": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"mid": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"treble": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+}
+},
+"TA_BASSAMP2": {
+"bass": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"blend": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"drive": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"master": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"mid-high": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"mid-low": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"shape": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"treble": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+}
+},
+"TA_BASSAMP3": {
+"band0": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"band1": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"band2": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"band3": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"band4": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"band5": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"band6": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"color": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"drive": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"master": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_BIGM": {
+"drive": {
+"default": 5.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"level": {
+"default": 8.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"tone": {
+"default": 5.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+}
+},
+"TA_BIT_CRUSH": {
+"antialias": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"bit": {
+"default": 1.0,
+"hi": 6,
+"kind": "step",
+"lo": 0
+},
+"downsample": {
+"default": 22050.0,
+"hi": 44100.0,
+"kind": "log",
+"lo": 8000.0
+},
+"drive": {
+"default": 0.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_BIT_CRUSH2": {
+"antialias": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"bit": {
+"default": 1.0,
+"hi": 23,
+"kind": "step",
+"lo": 0
+},
+"downsample": {
+"default": 22050.0,
+"hi": 44100.0,
+"kind": "log",
+"lo": 8000.0
+},
+"drive": {
+"default": 0.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_CABIR": {
+"delay": {
+"default": 0.0,
+"hi": 100,
+"kind": "log",
+"lo": 0.0001
+},
+"level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_CEB3": {
+"depth": {
+"default": 50.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"effect": {
+"default": 50.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"filter": {
+"default": 50.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"speed": {
+"hi": 20000,
+"kind": "log",
+"lo": 0,
+"sync_steps": 19
+}
+},
+"TA_CENTAUR": {
+"drive": {
+"default": 6.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"level": {
+"default": 7.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"tone": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+}
+},
+"TA_CONSOLEEMU": {
+"console-model": {
+"default": 0.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"input-trim": {
+"default": 0.0,
+"hi": 6.0,
+"kind": "lin",
+"lo": -6.0
+},
+"mic-pre": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"mix-level": {
+"default": 0.0,
+"hi": 6.0,
+"kind": "lin",
+"lo": -24.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"tolerances": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_CULTURE_VULTURE": {
+"bias": {
+"default": 3.0,
+"hi": 11.0,
+"kind": "lin",
+"lo": 1.0
+},
+"dist_type": {
+"default": 0.0,
+"hi": 9,
+"kind": "step",
+"lo": 0
+},
+"drive": {
+"default": 5.0,
+"hi": 13.0,
+"kind": "lin",
+"lo": -20.0
+},
+"filter": {
+"default": 0.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"level": {
+"default": 0.0,
+"hi": 5.0,
+"kind": "lin",
+"lo": -25.0
+},
+"outdamp": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"overdrive": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_DBX160": {
+"outlevel": {
+"default": 0.0,
+"hi": 20.0,
+"kind": "lin",
+"lo": -20.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ratio": {
+"default": 4.0,
+"hi": 25.0,
+"kind": "log",
+"lo": 1.0
+},
+"threshold": {
+"default": 1.0,
+"hi": 3.0,
+"kind": "log",
+"lo": 0.01
+}
+},
+"TA_DBX180A": {
+"compression": {
+"default": 50.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"dry": {
+"default": 50.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"wet": {
+"default": 50.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+}
+},
+"TA_DEESSER": {
+"freq": {
+"default": 5000.0,
+"hi": 20000.0,
+"kind": "log",
+"lo": 1000.0
+},
+"mode": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"sidechain": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"threshold": {
+"default": 0.0,
+"hi": 0.0,
+"kind": "lin",
+"lo": -40.0
+}
+},
+"TA_DIMENSIOND": {
+"p1": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"p2": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"p3": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"p4": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_DIST": {
+"drive": {
+"default": 6.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"level": {
+"default": 7.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"tone": {
+"default": 5.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"version": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_DOLBY361": {
+"compression": {
+"default": 50.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"dry": {
+"default": 50.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"level": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"vocal_mod": {
+"default": 0.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"wet": {
+"default": 50.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+}
+},
+"TA_DOLBY361MOD": {
+"compression": {
+"default": 50.0,
+"hi": 51.0,
+"kind": "lin",
+"lo": 50.0
+},
+"dry": {
+"default": 50.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"level": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"vocal_mod": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"wet": {
+"default": 50.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+}
+},
+"TA_DUMMY": {
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_ECHOFILTER": {
+"center": {
+"default": 4000.0,
+"hi": 18000.0,
+"kind": "log",
+"lo": 400.0
+},
+"depth": {
+"default": 1.0,
+"hi": 3.0,
+"kind": "lin",
+"lo": 0.0
+},
+"dry": {
+"default": 100.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"mix": {
+"default": 30.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"regen": {
+"default": 25.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"reverse": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"speed": {
+"default": 1.0,
+"hi": 10.0,
+"kind": "log",
+"lo": 0.1
+},
+"stereo_flip": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"time": {
+"hi": 10,
+"kind": "log",
+"lo": 0.0001,
+"sync_steps": 16
+}
+},
+"TA_ECHOSON": {
+"in_level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"mix": {
+"default": 2.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"mode": {
+"default": 0.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"mode-2nd": {
+"default": 0.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"noise": {
+"default": 0.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"out_level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"play1": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"play1-2nd": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"play2": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"play2-2nd": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"play3": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"play3-2nd": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"play4": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"play4-2nd": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"rec1": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"rec1-2nd": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"rec2": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"rec2-2nd": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"rec3": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"rec3-2nd": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"rec4": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"rec4-2nd": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"stereo-mode": {
+"default": 0.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"stereo-onoff": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"swell": {
+"default": 2.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"swell-2nd": {
+"default": 2.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"time": {
+"default": 0.31,
+"hi": 1.3,
+"kind": "log",
+"lo": 0.07
+},
+"time-2nd": {
+"default": 1.0,
+"hi": 2.0,
+"kind": "log",
+"lo": 0.5
+},
+"tone": {
+"default": 0.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": -10.0
+},
+"wow": {
+"default": 0.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+}
+},
+"TA_ECHOTAPE": {
+"dist": {
+"default": 30.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"dry": {
+"default": 100.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"mix": {
+"default": 30.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"regen": {
+"default": 25.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"reverse": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"spread": {
+"hi": 0.5,
+"kind": "lin",
+"lo": 0.0,
+"sync_steps": 12
+},
+"stereo_flip": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"time": {
+"hi": 10,
+"kind": "log",
+"lo": 0.0001,
+"sync_steps": 16
+},
+"wow-flut": {
+"default": 0.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+}
+},
+"TA_EQ550A": {
+"bandpass-power": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"gain": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"high-freq": {
+"default": 10000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"high-gain": {
+"default": 0.0,
+"hi": 12.0,
+"kind": "lin",
+"lo": -12.0
+},
+"high-mode": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"high-power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"low-freq": {
+"default": 150.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"low-gain": {
+"default": 0.0,
+"hi": 12.0,
+"kind": "lin",
+"lo": -12.0
+},
+"low-mode": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"low-power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"mid1-freq": {
+"default": 1000.0,
+"hi": 5000.0,
+"kind": "log",
+"lo": 400.0
+},
+"mid1-gain": {
+"default": 0.0,
+"hi": 12.0,
+"kind": "lin",
+"lo": -12.0
+},
+"mid1-power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"mid2-freq": {
+"default": 2000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"mid2-gain": {
+"default": 0.0,
+"hi": 12.0,
+"kind": "lin",
+"lo": -12.0
+},
+"mid2-power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"out-level": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_EQ84": {
+"high-freq": {
+"default": 0.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"high-gain": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"high-mute": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"hpf-bypass": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"hpf-freq": {
+"default": 0.0,
+"hi": 3,
+"kind": "step",
+"lo": 0
+},
+"input": {
+"default": 0.0,
+"hi": 12.0,
+"kind": "lin",
+"lo": -12.0
+},
+"low-freq": {
+"default": 0.0,
+"hi": 3,
+"kind": "step",
+"lo": 0
+},
+"low-gain": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"low-mute": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"lpf-bypass": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"lpf-freq": {
+"default": 0.0,
+"hi": 4,
+"kind": "step",
+"lo": 0
+},
+"mid-freq": {
+"default": 0.0,
+"hi": 6,
+"kind": "step",
+"lo": 0
+},
+"mid-gain": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"mid-mute": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"mid-q": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_EQP1A": {
+"atten-sel": {
+"default": 1.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"bandwith": {
+"default": 5.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"high-atten": {
+"default": 0.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"high-boost": {
+"default": 0.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"high-kcs": {
+"default": 4.0,
+"hi": 6,
+"kind": "step",
+"lo": 0
+},
+"in-lev": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"low-atten": {
+"default": 0.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"low-boost": {
+"default": 0.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"low-cps": {
+"default": 1.0,
+"hi": 3,
+"kind": "step",
+"lo": 0
+},
+"out-lev": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_EVENHARM": {
+"antifeedback": {
+"default": 0.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"delay": {
+"hi": 1.2,
+"kind": "lin",
+"lo": 0.0,
+"sync_steps": 16
+},
+"feedback": {
+"default": 0.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"mix": {
+"default": 100.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"pitchcoarse": {
+"default": 16.0,
+"hi": 24,
+"kind": "step",
+"lo": 0
+},
+"pitchcont": {
+"default": 0.0,
+"hi": 12.0,
+"kind": "lin",
+"lo": -12.0
+},
+"pitchfine": {
+"default": 0.0,
+"hi": 11.5878,
+"kind": "lin",
+"lo": -17.0074
+},
+"pitchmode": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_EXTENDED_EQ": {
+"band1-bypass": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band1-freq": {
+"default": 1000.0,
+"hi": 20000.0,
+"kind": "log",
+"lo": 20.0
+},
+"band1-gain": {
+"default": 0.0,
+"hi": 18.0,
+"kind": "lin",
+"lo": -18.0
+},
+"band1-midside": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band1-mode": {
+"default": 4.0,
+"hi": 9,
+"kind": "step",
+"lo": 0
+},
+"band1-q": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"band1-slope": {
+"default": 1.0,
+"hi": 5,
+"kind": "step",
+"lo": 0
+},
+"band1-solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band10-bypass": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band10-freq": {
+"default": 1000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"band10-gain": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"band10-midside": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band10-mode": {
+"default": 4.0,
+"hi": 9,
+"kind": "step",
+"lo": 0
+},
+"band10-q": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"band10-slope": {
+"default": 1.0,
+"hi": 5,
+"kind": "step",
+"lo": 0
+},
+"band10-solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band10s-freq": {
+"default": 1000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"band10s-gain": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"band10s-mode": {
+"default": 4.0,
+"hi": 7,
+"kind": "step",
+"lo": 0
+},
+"band10s-q": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"band10s-slope": {
+"default": 1.0,
+"hi": 5,
+"kind": "step",
+"lo": 0
+},
+"band1s-freq": {
+"default": 1000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"band1s-gain": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"band1s-mode": {
+"default": 4.0,
+"hi": 7,
+"kind": "step",
+"lo": 0
+},
+"band1s-q": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"band1s-slope": {
+"default": 1.0,
+"hi": 5,
+"kind": "step",
+"lo": 0
+},
+"band2-bypass": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band2-freq": {
+"default": 1000.0,
+"hi": 20000.0,
+"kind": "log",
+"lo": 20.0
+},
+"band2-gain": {
+"default": 0.0,
+"hi": 18.0,
+"kind": "lin",
+"lo": -18.0
+},
+"band2-midside": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band2-mode": {
+"default": 4.0,
+"hi": 9,
+"kind": "step",
+"lo": 0
+},
+"band2-q": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"band2-slope": {
+"default": 1.0,
+"hi": 5,
+"kind": "step",
+"lo": 0
+},
+"band2-solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band2s-freq": {
+"default": 1000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"band2s-gain": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"band2s-mode": {
+"default": 4.0,
+"hi": 7,
+"kind": "step",
+"lo": 0
+},
+"band2s-q": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"band2s-slope": {
+"default": 1.0,
+"hi": 5,
+"kind": "step",
+"lo": 0
+},
+"band3-bypass": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band3-freq": {
+"default": 1000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"band3-gain": {
+"default": 0.0,
+"hi": 18.0,
+"kind": "lin",
+"lo": -18.0
+},
+"band3-midside": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band3-mode": {
+"default": 4.0,
+"hi": 9,
+"kind": "step",
+"lo": 0
+},
+"band3-q": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"band3-slope": {
+"default": 1.0,
+"hi": 5,
+"kind": "step",
+"lo": 0
+},
+"band3-solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band3s-freq": {
+"default": 1000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"band3s-gain": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"band3s-mode": {
+"default": 4.0,
+"hi": 7,
+"kind": "step",
+"lo": 0
+},
+"band3s-q": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"band3s-slope": {
+"default": 1.0,
+"hi": 5,
+"kind": "step",
+"lo": 0
+},
+"band4-bypass": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band4-freq": {
+"default": 1000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"band4-gain": {
+"default": 0.0,
+"hi": 18.0,
+"kind": "lin",
+"lo": -18.0
+},
+"band4-midside": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band4-mode": {
+"default": 4.0,
+"hi": 9,
+"kind": "step",
+"lo": 0
+},
+"band4-q": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"band4-slope": {
+"default": 1.0,
+"hi": 5,
+"kind": "step",
+"lo": 0
+},
+"band4-solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band4s-freq": {
+"default": 1000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"band4s-gain": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"band4s-mode": {
+"default": 4.0,
+"hi": 7,
+"kind": "step",
+"lo": 0
+},
+"band4s-q": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"band4s-slope": {
+"default": 1.0,
+"hi": 5,
+"kind": "step",
+"lo": 0
+},
+"band5-bypass": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band5-freq": {
+"default": 1000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"band5-gain": {
+"default": 0.0,
+"hi": 18.0,
+"kind": "lin",
+"lo": -18.0
+},
+"band5-midside": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band5-mode": {
+"default": 4.0,
+"hi": 9,
+"kind": "step",
+"lo": 0
+},
+"band5-q": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"band5-slope": {
+"default": 1.0,
+"hi": 5,
+"kind": "step",
+"lo": 0
+},
+"band5-solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band5s-freq": {
+"default": 1000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"band5s-gain": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"band5s-mode": {
+"default": 4.0,
+"hi": 7,
+"kind": "step",
+"lo": 0
+},
+"band5s-q": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"band5s-slope": {
+"default": 1.0,
+"hi": 5,
+"kind": "step",
+"lo": 0
+},
+"band6-bypass": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band6-freq": {
+"default": 1000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"band6-gain": {
+"default": 0.0,
+"hi": 18.0,
+"kind": "lin",
+"lo": -18.0
+},
+"band6-midside": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band6-mode": {
+"default": 4.0,
+"hi": 9,
+"kind": "step",
+"lo": 0
+},
+"band6-q": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"band6-slope": {
+"default": 1.0,
+"hi": 5,
+"kind": "step",
+"lo": 0
+},
+"band6-solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band6s-freq": {
+"default": 1000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"band6s-gain": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"band6s-mode": {
+"default": 4.0,
+"hi": 7,
+"kind": "step",
+"lo": 0
+},
+"band6s-q": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"band6s-slope": {
+"default": 1.0,
+"hi": 5,
+"kind": "step",
+"lo": 0
+},
+"band7-bypass": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band7-freq": {
+"default": 1000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"band7-gain": {
+"default": 0.0,
+"hi": 18.0,
+"kind": "lin",
+"lo": -18.0
+},
+"band7-midside": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band7-mode": {
+"default": 4.0,
+"hi": 9,
+"kind": "step",
+"lo": 0
+},
+"band7-q": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"band7-slope": {
+"default": 1.0,
+"hi": 5,
+"kind": "step",
+"lo": 0
+},
+"band7-solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band7s-freq": {
+"default": 1000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"band7s-gain": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"band7s-mode": {
+"default": 4.0,
+"hi": 7,
+"kind": "step",
+"lo": 0
+},
+"band7s-q": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"band7s-slope": {
+"default": 1.0,
+"hi": 5,
+"kind": "step",
+"lo": 0
+},
+"band8-bypass": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band8-freq": {
+"default": 1000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"band8-gain": {
+"default": 0.0,
+"hi": 18.0,
+"kind": "lin",
+"lo": -18.0
+},
+"band8-midside": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band8-mode": {
+"default": 4.0,
+"hi": 9,
+"kind": "step",
+"lo": 0
+},
+"band8-q": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"band8-slope": {
+"default": 1.0,
+"hi": 5,
+"kind": "step",
+"lo": 0
+},
+"band8-solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band8s-freq": {
+"default": 1000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"band8s-gain": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"band8s-mode": {
+"default": 4.0,
+"hi": 7,
+"kind": "step",
+"lo": 0
+},
+"band8s-q": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"band8s-slope": {
+"default": 1.0,
+"hi": 5,
+"kind": "step",
+"lo": 0
+},
+"band9-bypass": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band9-freq": {
+"default": 1000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"band9-gain": {
+"default": 0.0,
+"hi": 18.0,
+"kind": "lin",
+"lo": -18.0
+},
+"band9-midside": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band9-mode": {
+"default": 4.0,
+"hi": 9,
+"kind": "step",
+"lo": 0
+},
+"band9-q": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"band9-slope": {
+"default": 1.0,
+"hi": 5,
+"kind": "step",
+"lo": 0
+},
+"band9-solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"band9s-freq": {
+"default": 1000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"band9s-gain": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"band9s-mode": {
+"default": 4.0,
+"hi": 7,
+"kind": "step",
+"lo": 0
+},
+"band9s-q": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"band9s-slope": {
+"default": 1.0,
+"hi": 5,
+"kind": "step",
+"lo": 0
+},
+"master-level": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_FAIRCHILD670": {
+"harmonics": {
+"default": -4.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"lat_dc_thresh": {
+"default": 5.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"lat_gain": {
+"default": 0.0,
+"hi": 14.0,
+"kind": "lin",
+"lo": -6.0
+},
+"lat_mode": {
+"default": 5.0,
+"hi": 5,
+"kind": "step",
+"lo": 0
+},
+"lat_thresh": {
+"default": 5.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"level": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"mid-level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"model": {
+"default": 0.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"parallel": {
+"default": 100.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"side-level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"sidechain-mid": {
+"default": 30.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"sidechain-side": {
+"default": 30.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"stereo": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"vert_dc_thresh": {
+"default": 5.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"vert_gain": {
+"default": 0.0,
+"hi": 14.0,
+"kind": "lin",
+"lo": -6.0
+},
+"vert_mode": {
+"default": 5.0,
+"hi": 5,
+"kind": "step",
+"lo": 0
+},
+"vert_thresh": {
+"default": 5.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+}
+},
+"TA_FLANGER": {
+"color": {
+"default": 50.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"intensity": {
+"default": 50.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"range": {
+"default": 50.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"rate": {
+"hi": 10.0,
+"kind": "log",
+"lo": 0.1,
+"sync_steps": 19
+}
+},
+"TA_FREQ_GATE": {
+"attack": {
+"default": 0.005,
+"hi": 0.2,
+"kind": "log",
+"lo": 0.001
+},
+"exp_thresh": {
+"default": -30.0,
+"hi": 0.0,
+"kind": "lin",
+"lo": -80.0
+},
+"gate_thresh": {
+"default": -40.0,
+"hi": 0.0,
+"kind": "lin",
+"lo": -80.0
+},
+"high_cut": {
+"default": 20000.0,
+"hi": 20000.0,
+"kind": "log",
+"lo": 100.0
+},
+"hold": {
+"default": 0.0,
+"hi": 0.5,
+"kind": "lin",
+"lo": 0.0
+},
+"low_cut": {
+"default": 20.0,
+"hi": 5000.0,
+"kind": "log",
+"lo": 20.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ratio": {
+"default": 0.5,
+"hi": 1.0,
+"kind": "lin",
+"lo": 0.1
+},
+"release": {
+"default": 0.1,
+"hi": 3.0,
+"kind": "log",
+"lo": 0.04
+}
+},
+"TA_FUZZRACE": {
+"drive": {
+"default": 5.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"level": {
+"default": 8.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"tone": {
+"default": 5.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+}
+},
+"TA_GLOBAL": {
+"auxsend,aux1_aux2,level": {
+"default": -1000.0,
+"hi": 24,
+"kind": "lin",
+"lo": -1000.0
+},
+"auxsend,aux1_aux2,split": {
+"default": 6.0,
+"hi": 6,
+"kind": "step",
+"lo": 0
+},
+"auxsend,aux1_aux3,level": {
+"default": -1000.0,
+"hi": 24,
+"kind": "lin",
+"lo": -1000.0
+},
+"auxsend,aux1_aux3,split": {
+"default": 6.0,
+"hi": 6,
+"kind": "step",
+"lo": 0
+},
+"auxsend,aux1_aux4,level": {
+"default": -1000.0,
+"hi": 24,
+"kind": "lin",
+"lo": -1000.0
+},
+"auxsend,aux1_aux4,split": {
+"default": 6.0,
+"hi": 6,
+"kind": "step",
+"lo": 0
+},
+"auxsend,aux2_aux3,level": {
+"default": -1000.0,
+"hi": 24,
+"kind": "lin",
+"lo": -1000.0
+},
+"auxsend,aux2_aux3,split": {
+"default": 6.0,
+"hi": 6,
+"kind": "step",
+"lo": 0
+},
+"auxsend,aux2_aux4,level": {
+"default": -1000.0,
+"hi": 24,
+"kind": "lin",
+"lo": -1000.0
+},
+"auxsend,aux2_aux4,split": {
+"default": 6.0,
+"hi": 6,
+"kind": "step",
+"lo": 0
+},
+"auxsend,aux3_aux4,level": {
+"default": -1000.0,
+"hi": 24,
+"kind": "lin",
+"lo": -1000.0
+},
+"auxsend,aux3_aux4,split": {
+"default": 6.0,
+"hi": 6,
+"kind": "step",
+"lo": 0
+},
+"auxsend,in_aux1,level": {
+"default": -1000.0,
+"hi": 24,
+"kind": "lin",
+"lo": -1000.0
+},
+"auxsend,in_aux1,split": {
+"default": 6.0,
+"hi": 6,
+"kind": "step",
+"lo": 0
+},
+"auxsend,in_aux2,level": {
+"default": -1000.0,
+"hi": 24,
+"kind": "lin",
+"lo": -1000.0
+},
+"auxsend,in_aux2,split": {
+"default": 6.0,
+"hi": 6,
+"kind": "step",
+"lo": 0
+},
+"auxsend,in_aux3,level": {
+"default": -1000.0,
+"hi": 24,
+"kind": "lin",
+"lo": -1000.0
+},
+"auxsend,in_aux3,split": {
+"default": 6.0,
+"hi": 6,
+"kind": "step",
+"lo": 0
+},
+"auxsend,in_aux4,level": {
+"default": -1000.0,
+"hi": 24,
+"kind": "lin",
+"lo": -1000.0
+},
+"auxsend,in_aux4,split": {
+"default": 6.0,
+"hi": 6,
+"kind": "step",
+"lo": 0
+},
+"ch,aux1,mute": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ch,aux1,pan": {
+"default": 0.0,
+"hi": 50.0,
+"kind": "lin",
+"lo": -50.0
+},
+"ch,aux1,phase": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ch,aux1,solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ch,aux1,volume": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -1000.0
+},
+"ch,aux2,mute": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ch,aux2,pan": {
+"default": 0.0,
+"hi": 50.0,
+"kind": "lin",
+"lo": -28.1505
+},
+"ch,aux2,phase": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ch,aux2,solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ch,aux2,volume": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -1000.0
+},
+"ch,aux3,mute": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ch,aux3,pan": {
+"default": 0.0,
+"hi": 10,
+"kind": "lin",
+"lo": -50.0
+},
+"ch,aux3,phase": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ch,aux3,solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ch,aux3,volume": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -1000.0
+},
+"ch,aux4,mute": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ch,aux4,pan": {
+"default": 0.0,
+"hi": 50.0,
+"kind": "lin",
+"lo": 0.0
+},
+"ch,aux4,phase": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ch,aux4,solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ch,aux4,volume": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -1000.0
+},
+"ch,in,mute": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ch,in,pan": {
+"default": 0.0,
+"hi": 50.0,
+"kind": "lin",
+"lo": -50.0
+},
+"ch,in,phase": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ch,in,solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ch,in,volume": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -1000.0
+},
+"in_lev": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"lfo,0,conn,0,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,0,conn,0,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -3.65723
+},
+"lfo,0,conn,0,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,0,conn,1,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,0,conn,1,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,0,conn,1,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,0,conn,2,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,0,conn,2,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,0,conn,2,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,0,conn,3,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,0,conn,3,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,0,conn,3,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,0,conn,4,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,0,conn,4,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,0,conn,4,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,0,conn,5,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,0,conn,5,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,0,conn,5,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,0,conn,6,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,0,conn,6,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,0,conn,6,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,0,conn,7,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,0,conn,7,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,0,conn,7,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,0,depth": {
+"default": 25.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,0,speed": {
+"hi": 20000,
+"kind": "log",
+"lo": 0,
+"sync_steps": 19
+},
+"lfo,0,waveform": {
+"default": 0.0,
+"hi": 3,
+"kind": "step",
+"lo": 0
+},
+"lfo,1,conn,0,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,1,conn,0,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,1,conn,0,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,1,conn,1,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,1,conn,1,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,1,conn,1,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,1,conn,2,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,1,conn,2,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,1,conn,2,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,1,conn,3,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,1,conn,3,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,1,conn,3,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,1,conn,4,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,1,conn,4,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,1,conn,4,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,1,conn,5,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,1,conn,5,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,1,conn,5,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,1,conn,6,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,1,conn,6,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,1,conn,6,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,1,conn,7,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,1,conn,7,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,1,conn,7,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,1,depth": {
+"default": 25.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,1,speed": {
+"hi": 20000,
+"kind": "log",
+"lo": 0,
+"sync_steps": 19
+},
+"lfo,1,waveform": {
+"default": 0.0,
+"hi": 3,
+"kind": "step",
+"lo": 0
+},
+"lfo,2,conn,0,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,2,conn,0,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,2,conn,0,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,2,conn,1,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,2,conn,1,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,2,conn,1,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,2,conn,2,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,2,conn,2,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,2,conn,2,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,2,conn,3,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,2,conn,3,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,2,conn,3,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,2,conn,4,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,2,conn,4,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,2,conn,4,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,2,conn,5,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,2,conn,5,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,2,conn,5,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,2,conn,6,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,2,conn,6,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,2,conn,6,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,2,conn,7,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,2,conn,7,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,2,conn,7,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,2,depth": {
+"default": 25.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,2,speed": {
+"hi": 20000,
+"kind": "log",
+"lo": 0,
+"sync_steps": 19
+},
+"lfo,2,waveform": {
+"default": 0.0,
+"hi": 3,
+"kind": "step",
+"lo": 0
+},
+"lfo,3,conn,0,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,3,conn,0,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,3,conn,0,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,3,conn,1,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,3,conn,1,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,3,conn,1,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,3,conn,2,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,3,conn,2,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,3,conn,2,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,3,conn,3,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,3,conn,3,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,3,conn,3,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,3,conn,4,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,3,conn,4,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,3,conn,4,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,3,conn,5,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,3,conn,5,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,3,conn,5,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,3,conn,6,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,3,conn,6,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,3,conn,6,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,3,conn,7,curve": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,3,conn,7,max": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,3,conn,7,min": {
+"default": -100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"lfo,3,depth": {
+"default": 25.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"lfo,3,speed": {
+"hi": 20000,
+"kind": "log",
+"lo": 0,
+"sync_steps": 19
+},
+"lfo,3,waveform": {
+"default": 0.0,
+"hi": 3,
+"kind": "step",
+"lo": 0
+},
+"multiband_enable": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"sidechain,conn,0,range": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": -100.0
+},
+"sidechain,conn,1,range": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"sidechain,conn,2,range": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"sidechain,conn,3,range": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"sidechain,conn,4,range": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"sidechain,conn,5,range": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"sidechain,conn,6,range": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"sidechain,conn,7,range": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"sidechain,depth": {
+"default": 25.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"sidechain,release": {
+"default": 0.5,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"sidechain,source": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"sidechain_mix": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"sidechain_on": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"xover,0,freq": {
+"default": 120.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"xover,1,freq": {
+"default": 800.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"xover,2,freq": {
+"default": 5000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+}
+},
+"TA_GUITAR_AMP": {
+"bass": {
+"default": 5.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"drive": {
+"default": 5.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"level": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"mid": {
+"default": 5.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"model": {
+"default": 1.0,
+"hi": 8,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"presence": {
+"default": 2.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"treble": {
+"default": 5.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"volume": {
+"default": 8.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+}
+},
+"TA_HAMMONDVIBRATO": {
+"mode": {
+"default": 1.0,
+"hi": 6,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_HAMMONDVIBRATO2": {
+"cdry": {
+"default": 84.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"cwet": {
+"default": 30.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"depth1": {
+"default": 5.8,
+"hi": 6.8,
+"kind": "lin",
+"lo": 5.8
+},
+"depth2": {
+"default": 8.1,
+"hi": 9.1,
+"kind": "lin",
+"lo": 8.1
+},
+"depth3": {
+"default": 13.0,
+"hi": 14.0,
+"kind": "lin",
+"lo": 13.0
+},
+"dly1-offs": {
+"default": 0.1,
+"hi": 100,
+"kind": "log",
+"lo": 0.1
+},
+"dly2-offs": {
+"default": 0.1,
+"hi": 100,
+"kind": "log",
+"lo": 0.1
+},
+"dly3-offs": {
+"default": 0.1,
+"hi": 100,
+"kind": "log",
+"lo": 0.1
+},
+"mode": {
+"default": 1.0,
+"hi": 6,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"speed": {
+"default": 6.9,
+"hi": 20000,
+"kind": "log",
+"lo": 6.9
+},
+"vdry": {
+"default": 70.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"vwet": {
+"default": 30.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+}
+},
+"TA_LA2A": {
+"gain": {
+"default": 20.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"mode": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"out_level": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"parallel": {
+"default": 100.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 15.1164
+},
+"peak_red": {
+"default": 0.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"sidechain": {
+"default": 100.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+}
+},
+"TA_LA3A": {
+"gain": {
+"default": 20.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"harmonics": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"in-lev": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"mid-solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"midside-mode": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"mode": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"out_level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"parallel": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"peak_red": {
+"default": 20.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"side-gain": {
+"default": 20.0,
+"hi": 20.0,
+"kind": "lin",
+"lo": 19.97
+},
+"side-mode": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"side-peak_red": {
+"default": 20.0,
+"hi": 39.353,
+"kind": "lin",
+"lo": 20.0
+},
+"side-solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"sidechain": {
+"default": 120.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+}
+},
+"TA_LABSERIES5CLEAN": {
+"bass": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"bright": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"compression": {
+"default": 0.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"compronoff": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"in": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"master": {
+"default": 9.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"mid": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"treble": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"volume": {
+"default": 8.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+}
+},
+"TA_LABSERIES5DIST": {
+"bass": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"bright": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"compression": {
+"default": 0.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"compronoff": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"in": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"master": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"mid": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"midfreq": {
+"default": 800.0,
+"hi": 1868.34,
+"kind": "lin",
+"lo": 594.007
+},
+"multifilter": {
+"default": 0.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"treble": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"volume": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+}
+},
+"TA_LESLIE": {
+"drive": {
+"default": 10.0,
+"hi": 20.0,
+"kind": "lin",
+"lo": 0.0
+},
+"level": {
+"default": 2.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"lo-hi": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": -73.6842
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"room": {
+"default": -30.0,
+"hi": 24,
+"kind": "lin",
+"lo": -1000.0
+},
+"speed": {
+"default": 1.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"version": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_LESLIE2": {
+"bass-fast": {
+"default": 3.8,
+"hi": 20000,
+"kind": "log",
+"lo": 3.8
+},
+"bass-slow": {
+"default": 0.4,
+"hi": 20000,
+"kind": "log",
+"lo": 0.4
+},
+"drive": {
+"default": 10.0,
+"hi": 20.0,
+"kind": "lin",
+"lo": 10.0
+},
+"horn-fast": {
+"default": 6.7,
+"hi": 20000,
+"kind": "log",
+"lo": 6.7
+},
+"horn-slow": {
+"default": 0.5,
+"hi": 20000,
+"kind": "log",
+"lo": 0.5
+},
+"level": {
+"default": 2.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"lo-hi": {
+"default": -20.0,
+"hi": 100,
+"kind": "lin",
+"lo": -57.8947
+},
+"mic-distance": {
+"default": 0.0,
+"hi": 1.0,
+"kind": "lin",
+"lo": 0.0
+},
+"mic-spread": {
+"default": 180.0,
+"hi": 181.0,
+"kind": "lin",
+"lo": 180.0
+},
+"mono": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"room": {
+"default": -30.0,
+"hi": 24,
+"kind": "lin",
+"lo": -1000.0
+},
+"speed": {
+"default": 1.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_LESLIE3": {
+"bass-accel": {
+"default": 3.5,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"bass-decel": {
+"default": 2.0,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"bass-fast": {
+"default": 3.8,
+"hi": 20000,
+"kind": "log",
+"lo": 5.5
+},
+"bass-slow": {
+"default": 0.4,
+"hi": 20000,
+"kind": "log",
+"lo": 0.667
+},
+"drive": {
+"default": 10.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"horn-accel": {
+"default": 1.5,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"horn-decel": {
+"default": 1.5,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"horn-fast": {
+"default": 6.7,
+"hi": 20000,
+"kind": "log",
+"lo": 6.47
+},
+"horn-slow": {
+"default": 0.5,
+"hi": 20000,
+"kind": "log",
+"lo": 0.833333
+},
+"level": {
+"default": 2.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"lo-hi": {
+"default": -20.0,
+"hi": 100,
+"kind": "lin",
+"lo": -1.0
+},
+"mic-distance": {
+"default": 0.0,
+"hi": 31.664,
+"kind": "lin",
+"lo": 0.0
+},
+"mic-spread": {
+"default": 180.0,
+"hi": 180.0,
+"kind": "lin",
+"lo": 89.9491
+},
+"mono": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"room": {
+"default": -30.0,
+"hi": 24,
+"kind": "lin",
+"lo": -31.8923
+},
+"speed": {
+"default": 1.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_LESLIE4": {
+"bass-accel": {
+"default": 3.5,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"bass-decel": {
+"default": 2.0,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"bass-fast": {
+"default": 3.8,
+"hi": 20000,
+"kind": "log",
+"lo": 3.8
+},
+"bass-slow": {
+"default": 0.4,
+"hi": 20000,
+"kind": "log",
+"lo": 0.4
+},
+"drive": {
+"default": 10.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"horn-accel": {
+"default": 1.5,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"horn-decel": {
+"default": 1.5,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"horn-fast": {
+"default": 6.7,
+"hi": 20000,
+"kind": "log",
+"lo": 6.7
+},
+"horn-slow": {
+"default": 0.5,
+"hi": 20000,
+"kind": "log",
+"lo": 0.5
+},
+"level": {
+"default": 2.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"lo-hi": {
+"default": -20.0,
+"hi": 100,
+"kind": "lin",
+"lo": -20.0
+},
+"mic-distance": {
+"default": 0.0,
+"hi": 1.0,
+"kind": "lin",
+"lo": 0.0
+},
+"mic-spread": {
+"default": 180.0,
+"hi": 181.0,
+"kind": "lin",
+"lo": 180.0
+},
+"mono": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"pulsation": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"room": {
+"default": -30.0,
+"hi": 24,
+"kind": "lin",
+"lo": -30.0
+},
+"speed": {
+"default": 1.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_LIMITER143": {
+"attack": {
+"default": 50.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"level": {
+"default": 0.0,
+"hi": 0.0,
+"kind": "lin",
+"lo": -24.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"release": {
+"default": 50.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"sensitivity": {
+"default": 50.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"stereo-lnk": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_MASTERLIMITER": {
+"Level": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"attack": {
+"default": 0.1,
+"hi": 0.4417,
+"kind": "lin",
+"lo": -0.003869
+},
+"enhance": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"gain": {
+"default": 0.0,
+"hi": 18.0,
+"kind": "lin",
+"lo": -18.0
+},
+"knee": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"release": {
+"default": 0.1,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+}
+},
+"TA_MASTERLIMITERTHRESHOLD": {
+"Level": {
+"default": 0.0,
+"hi": 24.0,
+"kind": "lin",
+"lo": 0.0
+},
+"attack": {
+"default": 0.1,
+"hi": 1.0,
+"kind": "log",
+"lo": 0.05
+},
+"enhance": {
+"default": 0.0,
+"hi": 8.0,
+"kind": "lin",
+"lo": -8.0
+},
+"knee": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"release": {
+"default": 0.1,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"threshold": {
+"default": 0.0,
+"hi": 0.0,
+"kind": "lin",
+"lo": -24.0
+}
+},
+"TA_MESA_50CAL_CLEAN": {
+"band0": {
+"default": 0.0,
+"hi": 10.0658,
+"kind": "lin",
+"lo": 0.0
+},
+"band1": {
+"default": 0.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"band2": {
+"default": 0.0,
+"hi": 10,
+"kind": "lin",
+"lo": -7.10526
+},
+"band3": {
+"default": 0.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"band4": {
+"default": 0.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"bass": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"channel": {
+"default": 0.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"drive": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"mid": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"model": {
+"default": 7.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"presence": {
+"default": 2.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"treble": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"volume": {
+"default": 8.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+}
+},
+"TA_MESA_50CAL_LEAD": {
+"band0": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"band1": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"band2": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"band3": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"band4": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"bass": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"channel": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"drive": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"mid": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"model": {
+"default": 7.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"presence": {
+"default": 2.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"treble": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"volume": {
+"default": 8.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+}
+},
+"TA_METALPLANET": {
+"drive": {
+"default": 5.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"high": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"level": {
+"default": 8.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"low": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"mid": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_MSUPERBASS": {
+"bass": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"drive": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"input": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"master": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"mid": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"model": {
+"default": 37.0,
+"hi": 38.0,
+"kind": "lin",
+"lo": 37.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"presence": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"treble": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"volume": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+}
+},
+"TA_MSUPERLEAD": {
+"bass": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"drive": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"input": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"master": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"mid": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"model": {
+"default": 38.0,
+"hi": 39.0,
+"kind": "lin",
+"lo": 38.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"presence": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"treble": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"volume": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+}
+},
+"TA_MULTIBANDCOMPR": {
+"0Level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"0attack": {
+"default": 0.04,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"0drive": {
+"default": 0.0,
+"hi": 24.0,
+"kind": "lin",
+"lo": -12.0
+},
+"0ratio": {
+"default": 2.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"0release": {
+"default": 2.0,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"1Level": {
+"default": 0.0,
+"hi": 12.0,
+"kind": "lin",
+"lo": -12.0
+},
+"1attack": {
+"default": 0.04,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"1drive": {
+"default": 0.0,
+"hi": 24.0,
+"kind": "lin",
+"lo": -12.0
+},
+"1ratio": {
+"default": 2.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"1release": {
+"default": 2.0,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"2Level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"2attack": {
+"default": 0.04,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"2drive": {
+"default": 0.0,
+"hi": 24.0,
+"kind": "lin",
+"lo": -12.0
+},
+"2ratio": {
+"default": 2.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"2release": {
+"default": 2.0,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"3Level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"3attack": {
+"default": 0.04,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"3drive": {
+"default": 0.0,
+"hi": 24.0,
+"kind": "lin",
+"lo": -12.0
+},
+"3ratio": {
+"default": 2.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"3release": {
+"default": 2.0,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"freq0": {
+"default": 100.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"freq1": {
+"default": 800.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"freq2": {
+"default": 5000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"master_gain": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"master_level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"parallel": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"sidechain": {
+"default": 200.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"solo1": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"solo2": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"solo3": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"solo4": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_MULTIBANDCOMPRTHRESHOLD": {
+"0Level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"0attack": {
+"default": 0.04,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"0ratio": {
+"default": 2.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"0release": {
+"default": 2.0,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"0thresh": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"1Level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"1attack": {
+"default": 0.04,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"1ratio": {
+"default": 2.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"1release": {
+"default": 2.0,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"1thresh": {
+"default": 0.0,
+"hi": 0.0,
+"kind": "lin",
+"lo": -40.0
+},
+"2Level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"2attack": {
+"default": 0.04,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"2ratio": {
+"default": 2.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"2release": {
+"default": 2.0,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"2thresh": {
+"default": 0.0,
+"hi": 0.0,
+"kind": "lin",
+"lo": -40.0
+},
+"3Level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"3attack": {
+"default": 0.04,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"3ratio": {
+"default": 2.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"3release": {
+"default": 2.0,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"3thresh": {
+"default": 0.0,
+"hi": 0.0,
+"kind": "lin",
+"lo": -40.0
+},
+"enable1": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"enable2": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"enable3": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"enable4": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"freq0": {
+"default": 100.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"freq1": {
+"default": 800.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"freq2": {
+"default": 5000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"master_gain": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"master_level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"parallel": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"sidechain": {
+"default": 200.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"solo1": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"solo2": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"solo3": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"solo4": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_MULTIBANDDIST": {
+"0Level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"0bias": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"0drive": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"0shape": {
+"default": 20.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"1Level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"1bias": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"1drive": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"1shape": {
+"default": 20.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"2Level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"2bias": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"2drive": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"2shape": {
+"default": 20.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"3Level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"3bias": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"3drive": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"3shape": {
+"default": 20.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"freq0": {
+"default": 100.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"freq1": {
+"default": 800.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"freq2": {
+"default": 5000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"master_gain": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"master_level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"parallel": {
+"default": 100.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"solo0": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"solo1": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"solo2": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"solo4": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"version": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_OCTAVER2": {
+"dry": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -36.0
+},
+"oct1": {
+"default": 0.0,
+"hi": 12.0,
+"kind": "lin",
+"lo": -36.0
+},
+"oct2": {
+"default": -36.0,
+"hi": 24,
+"kind": "lin",
+"lo": -1000.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"tone": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+}
+},
+"TA_OUTPUT": {
+"ch,out,bypass": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ch,out,pan": {
+"default": 0.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"ch,out,volume": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_PHASE90": {
+"level": {
+"default": 60.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"resonance": {
+"default": 50.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"speed": {
+"default": 1.0,
+"hi": 10.0,
+"kind": "log",
+"lo": 0.15
+}
+},
+"TA_POG2": {
+"attack": {
+"default": 0.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"cutoff": {
+"default": 8000.0,
+"hi": 20000.0,
+"kind": "log",
+"lo": 100.0
+},
+"detune": {
+"default": 0.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"dry": {
+"default": 10.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"dry_in_atk": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"m1octave": {
+"default": 0.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"m2octave": {
+"default": 0.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"p1octave": {
+"default": 0.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"p2octave": {
+"default": 0.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"q": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+}
+},
+"TA_REVHALL": {
+"diffusion": {
+"default": 50.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"high": {
+"default": 1.0,
+"hi": 4.0,
+"kind": "log",
+"lo": 0.25
+},
+"level": {
+"default": 100.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"predelay": {
+"default": 0.0,
+"hi": 0.5,
+"kind": "lin",
+"lo": 0.0
+},
+"predelay-bpm": {
+"default": 4.0,
+"hi": 8,
+"kind": "step",
+"lo": 0
+},
+"predelay-synced": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"shape": {
+"default": 50.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"size": {
+"default": 50.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"time": {
+"default": 2.0,
+"hi": 20.0,
+"kind": "log",
+"lo": 0.6
+},
+"wet": {
+"default": 15.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+}
+},
+"TA_REVINVERSE": {
+"diffusion": {
+"default": 50.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"high": {
+"default": 8000.0,
+"hi": 18000.0,
+"kind": "log",
+"lo": 720.0
+},
+"level": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"low": {
+"default": 100.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"predelay": {
+"default": 0.0,
+"hi": 0.5,
+"kind": "lin",
+"lo": 0.0
+},
+"predelay-bpm": {
+"default": 4.0,
+"hi": 8,
+"kind": "step",
+"lo": 0
+},
+"predelay-synced": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"time": {
+"default": 1.0,
+"hi": 1.5,
+"kind": "log",
+"lo": 0.1
+},
+"time-bpm": {
+"default": 8.0,
+"hi": 11,
+"kind": "step",
+"lo": 0
+},
+"time-synced": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"wet": {
+"default": 25.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+}
+},
+"TA_REVIR": {
+"fakestereo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"length": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -25.7352
+},
+"mix": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"predelay": {
+"default": 0.0,
+"hi": 0.5,
+"kind": "lin",
+"lo": 0.0
+}
+},
+"TA_REVPLATE": {
+"colour": {
+"default": 1.0,
+"hi": 4.0,
+"kind": "log",
+"lo": 0.25
+},
+"diffusion": {
+"default": 50.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"level": {
+"default": 100.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"predelay": {
+"default": 0.0,
+"hi": 0.5,
+"kind": "lin",
+"lo": 0.0
+},
+"predelay-bpm": {
+"default": 4.0,
+"hi": 8,
+"kind": "step",
+"lo": 0
+},
+"predelay-synced": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"shape": {
+"default": 50.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"size": {
+"default": 50.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"time": {
+"default": 2.0,
+"hi": 20.0,
+"kind": "log",
+"lo": 0.5
+},
+"wet": {
+"default": 15.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+}
+},
+"TA_REVROOM": {
+"damping": {
+"default": 1.0,
+"hi": 20000,
+"kind": "log",
+"lo": 1.0
+},
+"decay": {
+"default": 50.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"depth": {
+"default": 20.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"diffusion": {
+"default": 50.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"high": {
+"default": 8000.0,
+"hi": 18000.0,
+"kind": "lin",
+"lo": -1755.0
+},
+"level": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"low": {
+"default": 100.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"motion": {
+"default": 20.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"predelay": {
+"default": 0.0,
+"hi": 0.5,
+"kind": "lin",
+"lo": 0.0
+},
+"predelay-bpm": {
+"default": 4.0,
+"hi": 8,
+"kind": "step",
+"lo": 0
+},
+"predelay-synced": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"size": {
+"default": 50.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"time": {
+"default": 2.0,
+"hi": 4.5,
+"kind": "log",
+"lo": 0.2
+},
+"wet": {
+"default": 15.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+}
+},
+"TA_REVSPRING": {
+"bright": {
+"default": 50.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"dry": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"predelay": {
+"default": 0.0,
+"hi": 0.5,
+"kind": "lin",
+"lo": 0.0
+},
+"predelay-bpm": {
+"default": 4.0,
+"hi": 8,
+"kind": "step",
+"lo": 0
+},
+"predelay-synced": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"tension": {
+"default": 1.0,
+"hi": 1.203,
+"kind": "lin",
+"lo": 0.8
+},
+"time": {
+"default": 4.0,
+"hi": 6.0,
+"kind": "log",
+"lo": 2.0
+},
+"wet": {
+"default": 15.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+}
+},
+"TA_RHODESPRE": {
+"bass": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"intens": {
+"default": 0.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"mode": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"speed": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"treble": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"volume": {
+"default": 8.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"waveform": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_SAMPLE_PICKER": {
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_SAMPLE_PLAYER": {
+"attack": {
+"default": 0.01,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"decay": {
+"default": 0.1,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"detune": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": -24.1384
+},
+"level": {
+"default": -6.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"midinote": {
+"default": 0.0,
+"hi": 95,
+"kind": "step",
+"lo": 0
+},
+"mix": {
+"default": 50.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"off_thresh": {
+"default": -25.0,
+"hi": 24,
+"kind": "lin",
+"lo": -50.0224
+},
+"on_thresh": {
+"default": -15.0,
+"hi": 24,
+"kind": "lin",
+"lo": -48.6008
+},
+"polarity": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"random": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"release": {
+"default": 0.5,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"sustain": {
+"default": -6.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"triggr_onoff": {
+"default": 0.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"waveform": {
+"default": 3.0,
+"hi": 3,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_SLKSCOMPRESSOR": {
+"attack": {
+"default": 0.001,
+"hi": 10,
+"kind": "log",
+"lo": 0.0001
+},
+"automku": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"makeup": {
+"default": 0.0,
+"hi": 20.0,
+"kind": "lin",
+"lo": 0.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ratio": {
+"default": 2.0,
+"hi": 13.0,
+"kind": "lin",
+"lo": 2.0
+},
+"release": {
+"default": 0.4,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"threshold": {
+"default": -6.0,
+"hi": -48.0,
+"kind": "lin",
+"lo": 0.0
+}
+},
+"TA_SOLINA_MOD": {
+"depth": {
+"default": 75.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"mix": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_SOOTHE": {
+"attack": {
+"default": 5.0,
+"hi": 100,
+"kind": "log",
+"lo": 0.1
+},
+"delta": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"depth": {
+"default": 20.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"hpf": {
+"default": 300.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"level": {
+"default": 0.0,
+"hi": 1.0,
+"kind": "lin",
+"lo": 0.0
+},
+"lpf": {
+"default": 8000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"release": {
+"default": 50.0,
+"hi": 100,
+"kind": "log",
+"lo": 0.1
+},
+"sharpness": {
+"default": 40.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"stereo-link": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"threshold": {
+"default": 0.0,
+"hi": 1.0,
+"kind": "lin",
+"lo": 0.0
+}
+},
+"TA_SRSWOW": {
+"bass_mode": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24.2632
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"tru_bass": {
+"default": 0.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"wow": {
+"default": 0.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+}
+},
+"TA_SSLCOMPG": {
+"attack": {
+"default": 1.0,
+"hi": 100,
+"kind": "log",
+"lo": 0.1
+},
+"gain": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"makeup": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"mid-solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"midside-mode": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"output-level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"parallel": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ratio": {
+"default": 4.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"release": {
+"default": 0.6,
+"hi": 1.3,
+"kind": "log",
+"lo": 0.1
+},
+"side-attack": {
+"default": 1.0,
+"hi": 100,
+"kind": "log",
+"lo": 0.1
+},
+"side-makeup": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"side-ratio": {
+"default": 4.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"side-release": {
+"default": 0.6,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"side-solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"side-threshold": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"sidechain": {
+"default": 150.0,
+"hi": 20000,
+"kind": "log",
+"lo": 0.0
+},
+"threshold": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+}
+},
+"TA_SSLLMC": {
+"compressor-in": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"drywet": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"filter-in": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"hffreq": {
+"default": 15000.0,
+"hi": 30000.0,
+"kind": "log",
+"lo": 20
+},
+"lffreq": {
+"default": 30.0,
+"hi": 20000,
+"kind": "log",
+"lo": 15.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"sc": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"scoop": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"split": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"threshold": {
+"default": -10.0,
+"hi": 0.0,
+"kind": "lin",
+"lo": -20.0
+},
+"trim": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+}
+},
+"TA_SSL_FUSION": {
+"compr-on": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"density": {
+"default": 3.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"drive": {
+"default": 3.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"drive-mix": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"drive-on": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"eq-on": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"high-freq": {
+"default": 1.0,
+"hi": 3,
+"kind": "step",
+"lo": 0
+},
+"high-gain": {
+"default": 0.0,
+"hi": 1.0,
+"kind": "lin",
+"lo": 0.0
+},
+"hpf": {
+"default": 0.0,
+"hi": 3,
+"kind": "step",
+"lo": 0
+},
+"hpf-fat": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"input-trim": {
+"default": 0.0,
+"hi": 1.0,
+"kind": "lin",
+"lo": 0.0
+},
+"lf-extend": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"low-freq": {
+"default": 2.0,
+"hi": 3,
+"kind": "step",
+"lo": 0
+},
+"low-gain": {
+"default": 0.0,
+"hi": 1.0,
+"kind": "lin",
+"lo": 0.0
+},
+"out-trim": {
+"default": 0.0,
+"hi": 1.0,
+"kind": "lin",
+"lo": 0.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"shine": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"shuffle": {
+"default": 270.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"space": {
+"default": 0.0,
+"hi": 1.0,
+"kind": "lin",
+"lo": 0.0
+},
+"stereo-on": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"threshold": {
+"default": 0.0,
+"hi": 1.0,
+"kind": "lin",
+"lo": 0.0
+},
+"transformer-amount": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"transformer-on": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"width": {
+"default": 0.0,
+"hi": 1.0,
+"kind": "lin",
+"lo": 0.0
+},
+"xover": {
+"default": 8000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+}
+},
+"TA_SVT_CL": {
+"bass": {
+"default": 5.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"gain": {
+"default": 5.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"master": {
+"default": 7.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"mid_freq": {
+"default": 2.0,
+"hi": 4,
+"kind": "step",
+"lo": 0
+},
+"midrange": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"treble": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"ultra_hi": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ultra_lo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_T21BASSDRIVE": {
+"bass": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"blend": {
+"default": 8.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"drive": {
+"default": 5.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"gaincomp": {
+"default": 12.0,
+"hi": 36.0,
+"kind": "lin",
+"lo": 0.0
+},
+"level": {
+"default": 7.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"mid": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"presence": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"treble": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+}
+},
+"TA_TAPEEMU": {
+"play-level": {
+"default": 0.0,
+"hi": 24.0,
+"kind": "lin",
+"lo": -24.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"rec-level": {
+"default": 0.0,
+"hi": 24.0,
+"kind": "lin",
+"lo": -24.0
+},
+"tape-bias": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"tape-speed": {
+"default": 0.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"wow-flut": {
+"default": 0.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+}
+},
+"TA_TCPRE": {
+"bass": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"level": {
+"default": 8.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"model": {
+"default": 0.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"pre_gain": {
+"default": 0.0,
+"hi": 10,
+"kind": "lin",
+"lo": -0.18
+},
+"treble": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+}
+},
+"TA_TOONTRACK_CHORUS": {
+"depth": {
+"default": 50.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"level": {
+"default": 65.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"speed": {
+"default": 0.5,
+"hi": 4.0,
+"kind": "log",
+"lo": 0.4
+},
+"stereo": {
+"default": 50.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+}
+},
+"TA_TOONTRACK_COMPR": {
+"attack": {
+"default": 0.01,
+"hi": 0.3,
+"kind": "log",
+"lo": 0.001
+},
+"level": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"makeup": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"parallel": {
+"default": 100.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ratio": {
+"default": 1.0,
+"hi": 20.0,
+"kind": "log",
+"lo": 1.0
+},
+"release": {
+"default": 1.0,
+"hi": 4.0,
+"kind": "log",
+"lo": 0.04
+},
+"sidechain": {
+"default": 110.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"threshold": {
+"default": -30.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": -40.0
+}
+},
+"TA_TOONTRACK_COMPRMS": {
+"level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"mid_attack": {
+"default": 0.01,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"mid_makeup": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"mid_ratio": {
+"default": 1.0,
+"hi": 20.0,
+"kind": "lin",
+"lo": 0.0
+},
+"mid_release": {
+"default": 1.0,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"mid_sidechain": {
+"default": 110.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"mid_threshold": {
+"default": -30.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": -40.0
+},
+"parallel": {
+"default": 100.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"side_attack": {
+"default": 0.01,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"side_makeup": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"side_ratio": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"side_release": {
+"default": 1.0,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"side_sidechain": {
+"default": 110.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"side_threshold": {
+"default": -30.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": -40.0
+}
+},
+"TA_TOONTRACK_EQ2": {
+"high_freq": {
+"default": 10000.0,
+"hi": 20000.0,
+"kind": "log",
+"lo": 1000.0
+},
+"high_gain": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"high_mode": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"high_onoff": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"high_q": {
+"default": 1.0,
+"hi": 1.886,
+"kind": "lin",
+"lo": 0.175
+},
+"high_solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"level": {
+"default": 0.0,
+"hi": 18.0,
+"kind": "lin",
+"lo": -18.0
+},
+"low_freq": {
+"default": 100.0,
+"hi": 400.0,
+"kind": "log",
+"lo": 25.0
+},
+"low_gain": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"low_mode": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"low_onoff": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"low_q": {
+"default": 1.0,
+"hi": 5.0,
+"kind": "log",
+"lo": 0.3
+},
+"low_solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"mid1_freq": {
+"default": 500.0,
+"hi": 5000.0,
+"kind": "log",
+"lo": 25.0
+},
+"mid1_gain": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"mid1_onoff": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"mid1_q": {
+"default": 1.0,
+"hi": 6.0,
+"kind": "log",
+"lo": 0.2
+},
+"mid1_solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"mid2_freq": {
+"default": 1000.0,
+"hi": 5000.0,
+"kind": "log",
+"lo": 80.0
+},
+"mid2_gain": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"mid2_onoff": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"mid2_q": {
+"default": 1.0,
+"hi": 6.0,
+"kind": "log",
+"lo": 0.2
+},
+"mid2_solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"mid3_freq": {
+"default": 2000.0,
+"hi": 20000.0,
+"kind": "log",
+"lo": 80.0
+},
+"mid3_gain": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"mid3_onoff": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"mid3_q": {
+"default": 1.0,
+"hi": 6.0,
+"kind": "lin",
+"lo": 0.2
+},
+"mid3_solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_TOONTRACK_EQ2_MS": {
+"high_onoff": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"high_solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"low_onoff": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"low_solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"m_high_freq": {
+"default": 10000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"m_high_gain": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"m_high_mode": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"m_high_q": {
+"default": 1.0,
+"hi": 4.0,
+"kind": "lin",
+"lo": 0.3
+},
+"m_low_freq": {
+"default": 100.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"m_low_gain": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"m_low_mode": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"m_low_q": {
+"default": 1.0,
+"hi": 3.51754,
+"kind": "lin",
+"lo": 0.34788
+},
+"m_mid1_freq": {
+"default": 500.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"m_mid1_gain": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"m_mid1_q": {
+"default": 1.0,
+"hi": 2.62174,
+"kind": "lin",
+"lo": 0.409263
+},
+"m_mid2_freq": {
+"default": 1000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"m_mid2_gain": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"m_mid2_q": {
+"default": 1.0,
+"hi": 2.34423,
+"kind": "lin",
+"lo": 0.409263
+},
+"m_mid3_freq": {
+"default": 2000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"m_mid3_gain": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"m_mid3_q": {
+"default": 1.0,
+"hi": 4.01078,
+"kind": "lin",
+"lo": 0.250155
+},
+"mid1_onoff": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"mid1_solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"mid2_onoff": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"mid2_solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"mid3_onoff": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"mid3_solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"s_high_freq": {
+"default": 10000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"s_high_gain": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"s_high_mode": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"s_high_q": {
+"default": 1.0,
+"hi": 4.0,
+"kind": "lin",
+"lo": 0.3
+},
+"s_low_freq": {
+"default": 100.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"s_low_gain": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"s_low_mode": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"s_low_q": {
+"default": 1.0,
+"hi": 2.42923,
+"kind": "lin",
+"lo": 0.3
+},
+"s_mid1_freq": {
+"default": 500.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"s_mid1_gain": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"s_mid1_q": {
+"default": 1.0,
+"hi": 1.0,
+"kind": "lin",
+"lo": 0.391352
+},
+"s_mid2_freq": {
+"default": 1000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"s_mid2_gain": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"s_mid2_q": {
+"default": 1.0,
+"hi": 2.00435,
+"kind": "lin",
+"lo": 0.511896
+},
+"s_mid3_freq": {
+"default": 2000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"s_mid3_gain": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"s_mid3_q": {
+"default": 1.0,
+"hi": 6.0,
+"kind": "lin",
+"lo": 0.2
+}
+},
+"TA_TOONTRACK_LIMITER": {
+"auto_eq": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"ceiling": {
+"default": 0.0,
+"hi": 0.0,
+"kind": "lin",
+"lo": -15.0
+},
+"level": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"release": {
+"default": 1.0,
+"hi": 2.4,
+"kind": "log",
+"lo": 0.5
+},
+"threshold": {
+"default": 0.0,
+"hi": 30.0,
+"kind": "lin",
+"lo": 0.0
+}
+},
+"TA_TOONTRACK_LIMITERMS": {
+"ceiling": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"mid_auto_eq": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"mid_release": {
+"default": 1.0,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"mid_threshold": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"side_auto_eq": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"side_release": {
+"default": 1.0,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"side_threshold": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+}
+},
+"TA_TOONTRACK_LPFHPF": {
+"hpf_freq": {
+"default": 50.0,
+"hi": 20000.0,
+"kind": "log",
+"lo": 20.0
+},
+"hpf_onoff": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"hpf_order": {
+"default": 0.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"hpf_solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"lpf_freq": {
+"default": 18000.0,
+"hi": 20000.0,
+"kind": "log",
+"lo": 20.0
+},
+"lpf_onoff": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"lpf_order": {
+"default": 0.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"lpf_solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_TOONTRACK_LPFHPF_MS": {
+"hpf_freq_mid": {
+"default": 50.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"hpf_freq_side": {
+"default": 50.0,
+"hi": 20000.0,
+"kind": "log",
+"lo": 20.0
+},
+"hpf_onoff": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"hpf_order_mid": {
+"default": 0.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"hpf_order_side": {
+"default": 0.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"hpf_solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"lpf_freq_mid": {
+"default": 18000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"lpf_freq_side": {
+"default": 18000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"lpf_onoff": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"lpf_order_mid": {
+"default": 0.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"lpf_order_side": {
+"default": 0.0,
+"hi": 2,
+"kind": "step",
+"lo": 0
+},
+"lpf_solo": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_TOONTRACK_OVERLOUD": {
+"Amount": {
+"default": 0.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_TOONTRACK_TAPESIM": {
+"bias": {
+"default": 50.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"drive": {
+"default": 10.0,
+"hi": 18.0,
+"kind": "lin",
+"lo": 0.0
+},
+"level": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"noise": {
+"default": -1000.0,
+"hi": 24,
+"kind": "lin",
+"lo": -1000.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"speed": {
+"default": 15.0,
+"hi": 30.0,
+"kind": "log",
+"lo": 3.75
+},
+"wow": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+}
+},
+"TA_TRACKSPACER": {
+"amount": {
+"default": 20.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"attack": {
+"default": 1.0,
+"hi": 100,
+"kind": "log",
+"lo": 0.1
+},
+"highcut": {
+"default": 15000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"lowcut": {
+"default": 20.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"release": {
+"default": 50.0,
+"hi": 100,
+"kind": "log",
+"lo": 0.1
+}
+},
+"TA_TRANSIENT_DESIGNER": {
+"attack": {
+"default": 0.0,
+"hi": 15.0,
+"kind": "lin",
+"lo": -15.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"sustain": {
+"default": 0.0,
+"hi": 24.0,
+"kind": "lin",
+"lo": -24.0
+},
+"version": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_TREMOLO": {
+"intensity": {
+"default": 8.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"mode": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"panning": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"rate": {
+"hi": 20000,
+"kind": "log",
+"lo": 0,
+"sync_steps": 16
+}
+},
+"TA_TTEXCITER": {
+"harmonics": {
+"default": 1.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"mix": {
+"default": -10.0,
+"hi": 0.0,
+"kind": "lin",
+"lo": -30.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"threshold": {
+"default": -6.0,
+"hi": 24,
+"kind": "lin",
+"lo": -30.0
+},
+"tune": {
+"default": 0.5,
+"hi": 20000,
+"kind": "log",
+"lo": 0.5
+}
+},
+"TA_TTFILTER": {
+"center_freq": {
+"default": 1000.0,
+"hi": 20000.0,
+"kind": "log",
+"lo": 20.0
+},
+"env_release": {
+"default": 1.0,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"flavour": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"lfo_speed": {
+"default": 1.0,
+"hi": 20000,
+"kind": "log",
+"lo": 0.3
+},
+"lfo_sync_soeed": {
+"default": 3.0,
+"hi": 18,
+"kind": "step",
+"lo": 0
+},
+"lfo_waveform": {
+"default": 0.0,
+"hi": 4,
+"kind": "step",
+"lo": 0
+},
+"mode": {
+"default": 0.0,
+"hi": 3,
+"kind": "step",
+"lo": 0
+},
+"modulation_mnt": {
+"default": 0.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"modulation_source": {
+"default": 0.0,
+"hi": 5,
+"kind": "step",
+"lo": 0
+},
+"polarity": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"poles": {
+"default": 1.0,
+"hi": 3,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"resonance": {
+"default": 1.0,
+"hi": 20.0,
+"kind": "log",
+"lo": 0.2
+},
+"sequence": {
+"default": 3.0,
+"hi": 9,
+"kind": "step",
+"lo": 0
+},
+"sequence_speed": {
+"default": 1.0,
+"hi": 10,
+"kind": "log",
+"lo": 0.001
+},
+"sequence_sync_speed": {
+"default": 3.0,
+"hi": 18,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_TTSMALLSTONE": {
+"color": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"level": {
+"default": 80.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"speed": {
+"hi": 2.454,
+"kind": "lin",
+"lo": -0.251,
+"sync_steps": 19
+}
+},
+"TA_TTSPACER": {
+"asymmetry": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"gain": {
+"default": 0.0,
+"hi": 12.0,
+"kind": "lin",
+"lo": -12.0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"rotation": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"shuffle": {
+"default": 0.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"width": {
+"default": 0.0,
+"hi": 200.0,
+"kind": "lin",
+"lo": -200.0
+}
+},
+"TA_TTTRICHORUS": {
+"cdepth": {
+"default": 50.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"ldepth": {
+"default": 50.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"manual": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"preset": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"rdepth": {
+"default": 50.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"speed": {
+"default": 5.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"stereo": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+}
+},
+"TA_TT_MATCHINGEQ": {
+"amount": {
+"default": 100.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"hpf": {
+"default": 20.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"lev_comp": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"lpf": {
+"default": 20000.0,
+"hi": 20000,
+"kind": "log",
+"lo": 20
+},
+"mode": {
+"default": 1.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"profile_a": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"profile_b": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"smooth": {
+"default": 50.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+}
+},
+"TA_TWEED_DELUXE": {
+"inp": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"level": {
+"default": 0.0,
+"hi": 24,
+"kind": "lin",
+"lo": -24
+},
+"mode": {
+"default": 0.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"tone": {
+"default": 5.0,
+"hi": 10.0,
+"kind": "lin",
+"lo": 0.0
+},
+"volume": {
+"default": 8.0,
+"hi": 10,
+"kind": "lin",
+"lo": 0
+}
+},
+"TA_VB2": {
+"depth": {
+"default": 50.0,
+"hi": 100.0,
+"kind": "lin",
+"lo": 0.0
+},
+"level": {
+"default": 80.0,
+"hi": 100,
+"kind": "lin",
+"lo": 0
+},
+"power": {
+"default": 1.0,
+"hi": 1,
+"kind": "step",
+"lo": 0
+},
+"speed": {
+"hi": 20.0,
+"kind": "log",
+"lo": 0.9,
+"sync_steps": 16
+}
+}
+}

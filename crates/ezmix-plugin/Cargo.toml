@@ -1,0 +1,24 @@
+[package]
+name = "ez-er-mix"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "EZ-er Mix: a simplified EZmix preset player (VST3/CLAP plugin and standalone)"
+
+[lib]
+name = "ez_er_mix"
+crate-type = ["cdylib", "lib"]
+
+[[bin]]
+name = "ez-er-mix"
+path = "src/main.rs"
+
+[dependencies]
+ezmix-content.workspace = true
+ezmix-dsp.workspace = true
+nih_plug.workspace = true
+nih_plug_egui.workspace = true
+crossbeam-channel.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+cpal = "0.15"

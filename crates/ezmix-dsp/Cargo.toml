@@ -1,0 +1,12 @@
+[package]
+name = "ezmix-dsp"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Effect engine that renders EZmix presets"
+
+[dependencies]
+ezmix-content.workspace = true
+realfft.workspace = true
+serde.workspace = true
+serde_json.workspace = true
