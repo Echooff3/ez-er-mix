@@ -24,6 +24,8 @@
 //! Older packs store the engine XML directly; they become a single engine
 //! slot with one knob per labelled macro fader.
 
+use std::path::{Path, PathBuf};
+
 use crate::engine::{self, EngineState};
 
 #[derive(Debug, Clone, Default)]
@@ -95,6 +97,8 @@ pub enum NamModelRef<'a> {
     None,
     Internal(&'static str),
     Custom(&'a str),
+    /// A `.nam` file on disk (captures from a capture folder).
+    File(&'a Path),
 }
 
 impl NamState {
@@ -118,6 +122,8 @@ impl NamState {
         if self.has_custom_model || self.internal_model == 20 {
             if self.custom_model.is_empty() || self.custom_model == "NoModel" {
                 NamModelRef::None
+            } else if self.custom_model.starts_with('/') {
+                NamModelRef::File(Path::new(&self.custom_model))
             } else {
                 NamModelRef::Custom(&self.custom_model)
             }
@@ -130,10 +136,38 @@ impl NamState {
     }
 }
 
+/// A cabinet impulse response from a `.wav` file; knob values are 0..1.
+#[derive(Debug, Clone)]
+pub struct IrState {
+    pub file: PathBuf,
+    /// -12..+12 dB
+    pub level: f32,
+    /// 20..400 Hz
+    pub low_cut: f32,
+    /// 2..20 kHz, 1 = off
+    pub high_cut: f32,
+}
+
+impl IrState {
+    pub fn new(file: PathBuf) -> Self {
+        Self { file, level: 0.5, low_cut: 0.0, high_cut: 1.0 }
+    }
+
+    pub fn set_index(&mut self, index: usize, v: f32) {
+        match index {
+            0 => self.level = v,
+            1 => self.low_cut = v,
+            2 => self.high_cut = v,
+            _ => {}
+        }
+    }
+}
+
 #[derive(Debug, Clone)]
 pub enum SlotKind {
     Engine(Box<EngineState>),
     Nam(NamState),
+    CabIr(IrState),
     /// TFLite neural processing (AI feature, intentionally unsupported).
     Neural { model: String },
     Unknown(u32),
@@ -185,6 +219,8 @@ pub struct KnobGroup {
 pub enum SourceFormat {
     Ezmix3Text,
     LegacyXml(u32),
+    /// Made up for a capture file (`.nam` or `.wav`).
+    Capture,
 }
 
 #[derive(Debug, Clone)]

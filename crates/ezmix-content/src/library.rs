@@ -4,8 +4,10 @@ use std::collections::{BTreeMap, HashMap};
 use std::path::{Path, PathBuf};
 use std::sync::{Arc, Mutex};
 
-use crate::preset::{self, Preset};
+use crate::captures;
+use crate::preset::{self, IrState, Preset};
 use crate::ttfs::Archive;
+use crate::wav::{self, Wav};
 
 const EZMIX3_PREFS: &str = "/Users/Shared/Toontrack/Preferences/com.toontrack.ezmix3.plist";
 const DEFAULT_PACK_DIRS: &[&str] = &["/Library/Application Support/EZmix", "/Users/Shared/Toontrack/EZmix/Presets"];
@@ -20,6 +22,8 @@ pub struct PresetRef {
     pub name: String,
     /// Folder path below `/Presets`, `""` for top-level presets.
     pub folder: String,
+    /// The file of a capture (see [`captures`]); `None` inside packs.
+    pub file: Option<PathBuf>,
 }
 
 #[derive(Debug, Clone)]
@@ -45,6 +49,8 @@ impl Pack {
 pub struct Paths {
     pub pack_dirs: Vec<PathBuf>,
     pub resource_dir: PathBuf,
+    /// Folders holding `.nam` captures and `.wav` cabinet IRs.
+    pub capture_dirs: Vec<PathBuf>,
 }
 
 impl Paths {
@@ -67,7 +73,7 @@ impl Paths {
                 pack_dirs.push(d);
             }
         }
-        Self { pack_dirs, resource_dir }
+        Self { pack_dirs, resource_dir, capture_dirs: captures::dirs() }
     }
 }
 
@@ -115,7 +121,7 @@ impl Library {
                             Some((f, l)) => (f.to_owned(), l.to_owned()),
                             None => (String::new(), rest.to_owned()),
                         };
-                        presets.push(PresetRef { pack_id: id.clone(), path: e.path.clone(), name: leaf, folder });
+                        presets.push(PresetRef { pack_id: id.clone(), path: e.path.clone(), name: leaf, folder, file: None });
                     } else if let Some(model) = e.path.strip_prefix("/NAMModels/") {
                         if let Some(stem) = model.strip_suffix(".nam") {
                             pack_nam_models
@@ -133,6 +139,7 @@ impl Library {
         }
         // Core packs first, then add-ons alphabetically.
         packs.sort_by_key(|p| (!p.id.starts_with("EMX3_Core"), p.name.to_lowercase()));
+        packs.extend(captures::scan(&paths.capture_dirs));
         Self { packs, paths, pack_nam_models, archives: Mutex::new(archives) }
     }
 
@@ -155,6 +162,9 @@ impl Library {
     }
 
     pub fn load_preset(&self, r: &PresetRef) -> Result<Preset, String> {
+        if let Some(file) = &r.file {
+            return captures::load(r, file);
+        }
         let pack = self.pack(&r.pack_id).ok_or_else(|| format!("pack {} not installed", r.pack_id))?;
         let archive = self.archive(&pack.file).map_err(|e| e.to_string())?;
         let bytes = archive.get(&r.path).ok_or_else(|| format!("{} missing from {}", r.path, r.pack_id))?;
@@ -175,7 +185,14 @@ impl Library {
                 let archive = self.archive(&loc.file).ok()?;
                 archive.get(&loc.entry).map(<[u8]>::to_vec)
             }
+            preset::NamModelRef::File(path) => std::fs::read(path).ok(),
         }
+    }
+
+    /// The impulse response of a cabinet IR slot.
+    pub fn load_ir(&self, ir: &IrState) -> Result<Wav, String> {
+        let bytes = std::fs::read(&ir.file).map_err(|e| e.to_string())?;
+        wav::parse(&bytes)
     }
 
     pub fn preset_count(&self) -> usize {

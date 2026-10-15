@@ -9,6 +9,9 @@ use nih_plug::prelude::{Editor, Param, ParamSetter};
 use nih_plug_egui::egui::{self, Color32, RichText, Vec2};
 use nih_plug_egui::{create_egui_editor, resizable_window::ResizableWindow};
 
+use ezmix_content::captures::{IR_PACK, NAM_PACK};
+use ezmix_content::Library;
+
 use crate::loader::{LoadedInfo, Shared};
 use crate::widgets::{self, ACCENT};
 use crate::{EzParams, PresetSelection, RackSlot, RackState, MAX_SLOTS, NUM_KNOBS};
@@ -114,9 +117,24 @@ fn remember(rack: &RackState) {
     }
 }
 
+/// The rack on a first start: TONE3000's "EVH 5150 Iconic Chainsaw" amp
+/// capture into an EVH 5150 III cabinet IR, as far as those files are in a
+/// capture folder (matched by the end of their path).
+const DEFAULT_RACK: [(&str, &str); 2] = [(NAM_PACK, "EVH 5150 Iconic Chainsaw/5150  MAX Chainsaw.nam"), (IR_PACK, "EVH 5150 III.wav")];
+
+pub(crate) fn default_rack(lib: &Library) -> Vec<PresetSelection> {
+    DEFAULT_RACK
+        .iter()
+        .filter_map(|(pack, tail)| {
+            let r = lib.pack(pack)?.presets.iter().find(|r| r.path == *tail || r.path.ends_with(&format!("/{tail}")))?;
+            Some(PresetSelection { pack_id: r.pack_id.clone(), path: r.path.clone() })
+        })
+        .collect()
+}
+
 /// `EZERMIX_PRESET="<pack id>:<path>[;<pack id>:<path>…]"` overrides the
-/// remembered rack.
-fn startup_rack() -> Option<RackState> {
+/// remembered rack; without one, [`DEFAULT_RACK`].
+fn startup_rack(lib: &Library) -> Option<RackState> {
     let from_selections = |sels: Vec<PresetSelection>| {
         let slots: Vec<RackSlot> = sels.into_iter().take(MAX_SLOTS).enumerate().map(|(channel, preset)| RackSlot { channel, preset }).collect();
         (!slots.is_empty()).then_some(RackState { slots, active: 0 })
@@ -130,8 +148,8 @@ fn startup_rack() -> Option<RackState> {
         return Some(rack);
     }
     // Single preset remembered by earlier versions.
-    let text = std::fs::read_to_string(state_file("last-preset.json")?).ok()?;
-    from_selections(vec![serde_json::from_str(&text).ok()?])
+    let legacy = state_file("last-preset.json").and_then(|f| std::fs::read_to_string(f).ok()).and_then(|t| serde_json::from_str(&t).ok());
+    from_selections(legacy.map_or_else(|| default_rack(lib), |sel| vec![sel]))
 }
 
 pub fn create(params: Arc<EzParams>, shared: Arc<Shared>) -> Option<Box<dyn Editor>> {
@@ -439,7 +457,7 @@ fn draw(ui: &mut egui::Ui, params: &EzParams, shared: &Arc<Shared>, setter: &Par
             r.slots.len() == 1 && r.slots[0].preset.is_empty()
         };
         if fresh {
-            if let Some(mut saved) = startup_rack() {
+            if let Some(mut saved) = startup_rack(&shared.library) {
                 saved.sanitize();
                 for slot in &saved.slots {
                     if !slot.preset.is_empty() {
@@ -458,7 +476,7 @@ fn draw(ui: &mut egui::Ui, params: &EzParams, shared: &Arc<Shared>, setter: &Par
     let idx = index(shared);
 
     // Filtered list (also drives previous/next).
-    let filtered: Vec<IndexEntry> = match &idx {
+    let filtered: Vec<&IndexEntry> = match &idx {
         Some(entries) => {
             let q = state.search.to_lowercase();
             entries
@@ -466,7 +484,6 @@ fn draw(ui: &mut egui::Ui, params: &EzParams, shared: &Arc<Shared>, setter: &Par
                 .filter(|e| state.pack.as_ref().is_none_or(|p| &e.pack_id == p))
                 .filter(|e| state.family.is_none_or(|f| instrument_family(&e.instrument) == f))
                 .filter(|e| q.split_whitespace().all(|w| e.search.contains(w)))
-                .cloned()
                 .collect()
         }
         None => Vec::new(),
@@ -545,7 +562,7 @@ fn draw(ui: &mut egui::Ui, params: &EzParams, shared: &Arc<Shared>, setter: &Par
         ui.label(RichText::new(format!("{} presets", filtered.len())).small().weak());
         // Group by pack, then folder.
         let mut tree: BTreeMap<(usize, String), BTreeMap<String, Vec<&IndexEntry>>> = BTreeMap::new();
-        for e in &filtered {
+        for &e in &filtered {
             let order = shared.library.packs.iter().position(|p| p.id == e.pack_id).unwrap_or(usize::MAX);
             tree.entry((order, e.pack_name.clone())).or_default().entry(e.folder.clone()).or_default().push(e);
         }
@@ -677,6 +694,9 @@ fn draw(ui: &mut egui::Ui, params: &EzParams, shared: &Arc<Shared>, setter: &Par
         }
         for m in &info.report.missing_models {
             notes.push(format!("Amp model not found: {m}"));
+        }
+        for e in &info.report.load_errors {
+            notes.push(format!("Could not load {e}"));
         }
         if !info.report.unsupported.is_empty() {
             notes.push(format!("Bypassed: {}", info.report.unsupported.join(", ")));

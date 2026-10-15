@@ -120,6 +120,34 @@ fn rack_loads_reorders_swaps_and_removes() {
     assert!(p.shared.info(2).is_none());
 }
 
+/// The default rack: a TONE3000 NAM capture into a cabinet IR, when those
+/// files are in a capture folder.
+#[test]
+fn default_rack_plays_capture_into_cabinet() {
+    let Some(mut p) = plugin() else { return };
+    let rack = crate::editor::default_rack(&p.shared.library);
+    if rack.len() < 2 {
+        eprintln!("default captures not installed; skipping");
+        return;
+    }
+    let mut phase = 0.0;
+    p.shared.publish_order([0, 1]);
+    for (channel, sel) in rack.iter().enumerate() {
+        p.shared.request_load(channel, &sel.pack_id, &sel.path);
+    }
+    settle(&p);
+    let out = run(&mut p, 600.0, &mut phase);
+    assert_eq!(names(&p), ["5150 MAX Chainsaw", "EVH 5150 III"]);
+    for channel in 0..2 {
+        let info = p.shared.info(channel).unwrap();
+        assert!(info.report.missing_models.is_empty() && info.report.load_errors.is_empty(), "{:?}", info.report);
+    }
+    assert_eq!(p.shared.info(0).unwrap().knobs.len(), 7);
+    let tail = &out[out.len() / 2..];
+    let rms_db = 10.0 * (tail.iter().map(|x| x * x).sum::<f32>() / tail.len() as f32).log10();
+    assert!(tail.iter().all(|x| x.is_finite()) && (-40.0..0.0).contains(&rms_db), "rms {rms_db} dB");
+}
+
 #[test]
 fn rack_state_sanitizes() {
     let mut rack = RackState {

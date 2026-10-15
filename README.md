@@ -17,6 +17,18 @@ Deliberately left out: the AI features (Mix Assistant / preset space, and the
 TFLite "AI console" stages used by 88 presets — those stages are bypassed and
 the UI says so). Neural Amp Modeler captures (174 presets) are supported.
 
+Your own Neural Amp Modeler captures and cabinet IRs load too: `.nam` files
+(A1 WaveNets and TONE3000's A2 captures) and `.wav` impulse responses in
+`~/Music/NAM` or `~/Library/Application Support/EZ-er Mix/Captures` (add
+folders with `EZERMIX_CAPTURES=dir1:dir2`) show up as the "NAM Captures" and
+"Cab IRs" packs, sub-folders included. Captures get Gain, Gate, Bass, Mid,
+Treble, Level and Width; IRs get Level, Low cut and High cut. For an amp head
+capture, put a cab IR in the next tab. On a first start the rack is TONE3000's
+[EVH 5150 Iconic Chainsaw](https://www.tone3000.com/tones/evh-5150-iconic-chainsaw-45921)
+("5150 MAX Chainsaw") into an `EVH 5150 III.wav` cab IR, if those files are
+in a capture folder. LSTM models and NAM's FiLM / condition-DSP options are
+not supported (the UI says so).
+
 ## Build and install
 
 ```sh
@@ -28,7 +40,9 @@ Standalone: `EZ-er Mix.app` uses the default output device at its native rate
 and the default input device (except built-in microphones, to avoid feedback).
 From a terminal: `target/release/ez-er-mix --input-device "<name>"`.
 The standalone reopens the last rack. `EZERMIX_PRESET="EMX3_Core3:/Presets/68 Plexi Crunch"`
-preselects a preset; separate several with `;` to start with a rack.
+preselects a preset; separate several with `;` to start with a rack. Captures
+use the pack ids `NAM` and `IR` with paths relative to their capture folder,
+e.g. `NAM:EVH 5150 Iconic Chainsaw/5150  MAX Chainsaw.nam`.
 
 Tools:
 
@@ -36,7 +50,7 @@ Tools:
 cargo run --release -p ezmix-content --example scan        # parse every preset
 cargo run --release -p ezmix-content --example inspect -- "Plexi Crunch"
 cargo run --release -p ezmix-dsp --example render_all     # render + sanity-check all presets
-cargo test -p ez-er-mix                                    # rack audio + headless UI tests
+cargo test --workspace                                     # NAM vs. reference, rack audio, headless UI
 ```
 
 ## Release
@@ -75,8 +89,8 @@ To uninstall, delete the three installed bundles, then:
 
 | Crate | Role |
 |---|---|
-| `crates/ezmix-content` | Pack discovery, `ttfs` container reader, preset parsers (all three generations), parameter range table |
-| `crates/ezmix-dsp` | Effect engine: ~95 effect types, routing graph, NAM WaveNet runtime, partitioned convolution, IR decoder |
+| `crates/ezmix-content` | Pack discovery, `ttfs` container reader, preset parsers (all three generations), parameter range table, capture folders + WAV reader |
+| `crates/ezmix-dsp` | Effect engine: ~95 effect types, routing graph, NAM WaveNet runtime (A1 + A2), partitioned convolution, IR decoder, cab IR slot |
 | `crates/ezmix-plugin` | nih-plug plugin (preset rack) + egui editor + standalone entry point |
 
 ## What was reverse engineered
@@ -123,7 +137,9 @@ spectra.
 ## How faithful is it
 
 Preset structure, routing, macro behaviour, IRs and NAM captures are
-reproduced from the original data. The ~95 Overloud-derived effect algorithms
+reproduced from the original data. The WaveNet runtime matches the output of
+NAM core's reference renderer to float precision (A1 and A2 captures; a test
+pins this with a small synthetic model). The ~95 Overloud-derived effect algorithms
 (compressors, EQs, amps, reverbs, …) are clean re-implementations built
 against the same parameters — they behave as intended but are not
 sample-identical to EZmix. Known gaps:

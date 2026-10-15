@@ -940,7 +940,6 @@ version = "0.1.0"
 dependencies = [
  "ezmix-content",
  "realfft",
- "serde",
  "serde_json",
 ]
 

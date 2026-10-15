@@ -4,6 +4,7 @@
 // `Default` at the factory call sites.
 #![allow(clippy::new_without_default)]
 
+pub mod cab;
 pub mod conv;
 pub mod dsp;
 pub mod effect;

@@ -3,6 +3,7 @@
 use ezmix_content::preset::{Knob, KnobGroup, Preset, SlotKind};
 use ezmix_content::Library;
 
+use crate::cab::CabSlot;
 use crate::effect::Ctx;
 use crate::engine::{EngineGraph, BLOCK};
 use crate::nam::NamSlot;
@@ -10,6 +11,7 @@ use crate::nam::NamSlot;
 enum Proc {
     Engine(Box<EngineGraph>),
     Nam(Box<NamSlot>),
+    Cab(Box<CabSlot>),
     Bypass,
 }
 
@@ -18,8 +20,10 @@ enum Proc {
 pub struct LoadReport {
     /// AI "console" stages that were skipped.
     pub skipped_neural: usize,
-    /// NAM captures whose model file could not be loaded.
+    /// NAM captures whose model file could not be found.
     pub missing_models: Vec<String>,
+    /// Model or IR files that were found but could not be used.
+    pub load_errors: Vec<String>,
     /// Engine effect IDs without an implementation.
     pub unsupported: Vec<String>,
 }
@@ -57,10 +61,18 @@ impl PresetProcessor {
                         let json = library.load_nam_model(&state.model());
                         let slot = NamSlot::new(json.as_deref(), state.clone(), sr);
                         if !slot.has_model() {
-                            let name = if state.custom_model.is_empty() { format!("internal #{}", state.internal_model) } else { state.custom_model.clone() };
-                            report.missing_models.push(name);
+                            let name =
+                                if state.custom_model.is_empty() { format!("internal #{}", state.internal_model) } else { file_name(&state.custom_model) };
+                            match &slot.error {
+                                Some(e) => report.load_errors.push(format!("{name}: {e}")),
+                                None => report.missing_models.push(name),
+                            }
                         }
                         Proc::Nam(Box::new(slot))
+                    }
+                    SlotKind::CabIr(state) => {
+                        let ir = library.load_ir(state).map_err(|e| report.load_errors.push(format!("{}: {e}", file_name(&state.file.to_string_lossy())))).ok();
+                        Proc::Cab(Box::new(CabSlot::new(ir.as_ref(), state.clone(), sr)))
                     }
                     SlotKind::Neural { .. } => {
                         report.skipped_neural += 1;
@@ -96,6 +108,7 @@ impl PresetProcessor {
             match self.slots.get_mut(target.slot) {
                 Some((Proc::Engine(g), _)) => g.set_xfader(target.param, v),
                 Some((Proc::Nam(n), _)) => n.set_index(target.param, v),
+                Some((Proc::Cab(c), _)) => c.set_index(target.param, v),
                 _ => {}
             }
         }
@@ -106,6 +119,7 @@ impl PresetProcessor {
             match p {
                 Proc::Engine(g) => g.reset(),
                 Proc::Nam(n) => n.reset(),
+                Proc::Cab(c) => c.reset(),
                 Proc::Bypass => {}
             }
         }
@@ -125,6 +139,7 @@ impl PresetProcessor {
                 match p {
                     Proc::Engine(g) => g.process_block(&ctx, bl, br),
                     Proc::Nam(s) => s.process(bl, br),
+                    Proc::Cab(c) => c.process(bl, br),
                     Proc::Bypass => {}
                 }
             }
@@ -135,6 +150,11 @@ impl PresetProcessor {
             start = end;
         }
     }
+}
+
+/// Last component of a model path, for messages.
+fn file_name(path: &str) -> String {
+    std::path::Path::new(path).file_name().map_or_else(|| path.to_string(), |n| n.to_string_lossy().into_owned())
 }
 
 #[inline]

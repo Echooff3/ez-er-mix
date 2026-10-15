@@ -37,6 +37,7 @@ fn main() {
                         }
                     }
                     SlotKind::Nam(n) => println!(" slot {si}: NAM {:?}", n),
+                    SlotKind::CabIr(ir) => println!(" slot {si}: cab IR {:?}", ir.file),
                     SlotKind::Neural { model } => println!(" slot {si}: neural {model}"),
                     SlotKind::Unknown(k) => println!(" slot {si}: unknown type {k}"),
                 }
